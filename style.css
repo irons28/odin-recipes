@@ -1,49 +1,40 @@
 body {
     font-family: Arial, sans-serif; /* change the font of the body */
-    background-image: url("https://i.imgur.com/5j9XkOp.jpg"); /* Add a background image to the body */
-    background-size: cover; /* make the background image cover the whole body */
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
-    color: white; /* change the colour of the heading */
+    color: #e44d26; /* change the colour of the heading */
     text-align: center; /* center the heading */
     text-shadow: 2px 2px 4px black; /* add a shadow effect to the heading */
+    margin-top: 50px;
 }
 
 ul {
-    list-style-type: none; /* remove the bullet points from the list */
-    margin: 0; /* remove the margin from the list */
+    list-style: none; /* remove the bullet points from the list */
+    margin: 20px auto; /* remove the margin from the list */
     padding: 0; /* remove the padding from the list */
-    display: flex; /* make the list items display in a row */
-    justify-content: center; /* center the list items */
+    text-align: center;
 }
 
 li {
-    margin: 10px; /* add som marging around the list items */
+    margin: 10px 0; /* add som marging around the list items */
 }
 a {
-    display: block; /* make the links fill the list items */
-    width: 200px; /* set the width of the links */
-    height: 200px; /* set the height of the links */
-    border: 5px solid white; /* add a border to the links */
-    border-radius: 50%; /* make the border rounded */
     text-decoration: none; /* remove the underline from the links */
-    color: black; /* change the colour of the links */
+    color: #333; /* change the colour of the links */
     font-weight: bold; /* make the links bold */
-    text-align: center; /* center the links */
-    line-height: 200px; /* vertically center the links */
-    background-size: cover; /* make the background imagaes cover the links */
+    background-color: #e44d36;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 a:hover {
-    transform: scale(1.1); /* make the links grow when hovered */
-    transition: 0.3s; /* add a smooth transition effect */
-}
-
-a[href="./recipes/lasagna.html"] {
-    background-image: url("https://i.imgur.com/7Wg9zON.jpg"); /* add a background image to the lasagna link */
-}
-
-a[href="./recipes/sizzing-steak-fajitas.html"]{
-    background-image: url("https://i.imgur.com/6ZxYJ8S.jpg"); /* add a background image to the fajits link */
+    background-color: #333;
+    color: #e44d26;
 }
