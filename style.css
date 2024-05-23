@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+h1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+/* Layout Styles */
+.container {
+    max-width: 800px;
+    flex-direction: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Specific Styles */
+h2 {
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    li {
+        width: 45%;
+    }
+}
